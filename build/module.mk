@@ -140,9 +140,9 @@ ifeq (WINDOWS,$(MAKE_OS))
 filesize=`stat --print %s $1`
 else
 ifeq (LINUX, $(MAKE_OS))
-filesize=`stat -c %s $1`
+filesize=`/usr/bin/stat -c %s $1`
 else
-filesize=`stat -f%z $1`
+filesize=`/usr/bin/stat -f%z $1`
 endif
 endif
 

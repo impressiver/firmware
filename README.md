@@ -1,8 +1,39 @@
-[![Build Status](https://travis-ci.org/spark/firmware.svg?branch=develop)](https://travis-ci.org/spark/firmware)
+Particle Firmware for Amazon Dash button
+========================================
 
-# Particle Firmware for the Core and Photon
+Work in progress - details will be added as I figure out what I'm doing.
 
-This is the main source code repository of the Particle firmware libraries.
+~~~~~
+
+## Amazon Dash Hardware
+-  STM32F205RG6 MCU
+  -  Cortex M3
+  -  120MHz
+  -  1M Flash Memory
+  -  128KB RAM
+-  Broadcom BCM943362WCD4
+  -  IEEE 802.11 b/g/n
+  -  MAC/Baseband/Radio + SDIO
+-  ADMP441 Digital Mic (I2S)
+-  SST25VF016B SPI Flash (16Mbit)
+
+
+## SWD Pinout
+
+STM32F4*          Dash               J-link
+------------      ----               ------
+1 NC (VDD?)         C7 3V3                1 VTref
+2 JTCK/SWCLK      PA14 JTCK/SWCLK         9 JTCK/SWCLK
+3 GND              TM2 GND             4-12 GND
+4 JTMS/SWDIO      PA13 JTMS/SWDIO         7 JTMS/SWDIO
+5 JTRST/NRST       C30 RESET             15 RESET
+6 JTDO/SWO         PB3 JTDO/TRACESWO     13 JTDO/SWO
+
+*STlink/V2 via STM32F4207 Discovery board
+
+~~~~~
+
+This is forked from the main source code repository of the Particle firmware libraries.
 
 # Getting Started
 

@@ -111,6 +111,7 @@ common are listed here:
 | core     | 0           |
 | photon   | 6           |
 | P1       | 8           |
+| Dash     | 99          |
 
 The platform is specified on the command line as
 

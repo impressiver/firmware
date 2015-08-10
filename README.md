@@ -1,3 +1,7 @@
+# Spark your Amazon Dash button
+
+All the Dash codes are in the [dash](https://github.com/impressiver/firmware/tree/dash) branch;
+
 # Spark Core Firmware [![Build Status](https://travis-ci.org/spark/firmware.svg)](https://travis-ci.org/spark/firmware)
 
 This is the main source code repository of the Spark Core firmware libraries.

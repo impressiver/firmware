@@ -1,4 +1,4 @@
-WICED=/spark/photon-wiced
+WICED=/spark/dash-wiced
 
 OPTS=
 

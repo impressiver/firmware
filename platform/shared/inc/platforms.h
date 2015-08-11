@@ -35,7 +35,7 @@
 #define PLATFORM_ETHERNET_PROTO             9
 #define PLATFORM_ELECTRON                   10
 
-#define PLATFORM_DASH 99
+#define PLATFORM_DASH                       99
 
 
 #endif	/* PLATFORMS_H */

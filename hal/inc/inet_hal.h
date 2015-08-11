@@ -35,6 +35,8 @@ extern "C" {
 
 #if PLATFORM_ID>=4 && PLATFORM_ID<=8
 #define HAL_IPv6 1
+#elif PLATFORM_ID==99
+#define HAL_IPv6 1
 #else
 #define HAL_IPv6 0
 #endif

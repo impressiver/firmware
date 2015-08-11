@@ -62,6 +62,12 @@
 #define Wiring_IPv6 1
 #endif
 
+#if PLATFORM_ID==99     // dash
+#define Wiring_WiFi 1
+#define Wiring_IPv6 1
+#define Wiring_SPI1 1
+#endif
+
 #ifndef Wiring_SPI1
 #define Wiring_SPI1 0
 #endif

@@ -30,7 +30,7 @@ MAKEOVERRIDES := $(patsubst TARGET_FILE=%,,$(MAKE_OVERRIDES))
 endif
 endif
 
-MAKE_DEPENDENCIES = modules/photon/user-part
+MAKE_DEPENDENCIES = modules/$(PLATFORM_NAME)/user-part
 
 SUBDIR_GOALS := $(MAKECMDGOALS)
 MAKECMDGOALS := all

@@ -71,3 +71,15 @@ test(ADC_AnalogReadOnPinWithDACOutputResultsInCorrectValue) {
     //To Do : Add test for remaining pins if required
 }
 #endif
+
+#if (PLATFORM_ID == 99)
+test(ADC_AnalogReadOnPinWithDACOutputResultsInCorrectValue) {
+    pin_t pin = A5;//pin under test (Voltage divider with equal resistor values)
+    // when
+    analogWrite(DAC1, 2048);
+    int32_t ADCValue = analogRead(pin);
+    // then
+    assertTrue((ADCValue>2000)&&(ADCValue<2100));//ADCValue should be around 2048
+    //To Do : Add test for remaining pins if required
+}
+#endif

@@ -110,19 +110,20 @@
 #define BUTTON1_EXTI_IRQ_INDEX              39
 #define BUTTON1_EXTI_TRIGGER                EXTI_Trigger_Falling
 #elif   PLATFORM_ID == PLATFORM_DASH
-#define BUTTON1_GPIO_PIN                    GPIO_Pin_2
+// TODO: (IW) Fix me
+#define BUTTON1_GPIO_PIN                    GPIO_Pin_7
 #define BUTTON1_GPIO_PORT                   GPIOC
 #define BUTTON1_GPIO_CLK                    RCC_AHB1Periph_GPIOC
 #define BUTTON1_GPIO_MODE                   GPIO_Mode_IN
 #define BUTTON1_GPIO_PUPD                   GPIO_PuPd_UP
 #define BUTTON1_PRESSED                     0x00
-#define BUTTON1_EXTI_LINE                   EXTI_Line2
+#define BUTTON1_EXTI_LINE                   EXTI_Line7
 #define BUTTON1_EXTI_PORT_SOURCE            EXTI_PortSourceGPIOC
-#define BUTTON1_EXTI_PIN_SOURCE             EXTI_PinSource2
-#define BUTTON1_EXTI_IRQn                   EXTI2_IRQn
-#define BUTTON1_EXTI_IRQ_HANDLER            EXTI2_IRQHandler
+#define BUTTON1_EXTI_PIN_SOURCE             EXTI_PinSource7
+#define BUTTON1_EXTI_IRQn                   EXTI9_5_IRQn
+#define BUTTON1_EXTI_IRQ_HANDLER            EXTI9_5_IRQHandler
 #define BUTTON1_EXTI_IRQ_PRIORITY           7
-#define BUTTON1_EXTI_IRQ_INDEX              24
+#define BUTTON1_EXTI_IRQ_INDEX              39
 #define BUTTON1_EXTI_TRIGGER                EXTI_Trigger_Falling
 #endif
 
@@ -231,6 +232,7 @@
 #elif PLATFORM_ID == PLATFORM_TEACUP_PIGTAIL_PRODUCTION
     #define INTERNAL_FLASH_SIZE             (0x100000)
 #elif PLATFORM_ID == PLATFORM_DASH
+    // TODO: (IW) Fix me
     #define INTERNAL_FLASH_SIZE             (0x100000)
 #else
     #pragma message "PLATFORM_ID is " PREPSTRING(PLATFORM_ID)

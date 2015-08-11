@@ -1,11 +1,11 @@
 #
 ## Building the combined Image
-# edit WICED_SDK to point to the directory containing the photon-wiced repo, with the
+# edit WICED_SDK to point to the directory containing the dash-wiced repo, with the
 # `feature/combined-fw` branch checked out
 # edit FIRMWARE to point to the directory containing the firmware-private repo with the
 # `feature/hal` branch checked out
 # run make -f wiced_test_mfg_combined.mk
-# This will build the artefacts to $(FIRMEARE)/build/target/photon-rc2/
+# This will build artifacts to $(FIRMWARE)/build/target/dash-rc2/
 
 ifeq (,$(PLATFORM_ID))
 $(error PLATFORM_ID not defined!)
@@ -18,7 +18,7 @@ CORE?=../../../..
 WICED_SDK?=$(CORE)/WICED/WICED-SDK-3.1.1/WICED-SDK
 FIRMWARE=$(CORE)/firmware
 COMMON_BUILD=$(FIRMWARE)/build
-#WICED_SDK?=$(CORE)/photon-wiced
+#WICED_SDK?=$(CORE)/dash-wiced
 #FIRMWARE=$(CORE)/firmware-private
 
 include $(COMMON_BUILD)/macros.mk
@@ -27,7 +27,7 @@ include $(COMMON_BUILD)/version.mk
 
 CMD=test.mfg_test-BCM943362WCD4-FreeRTOS-LwIP-SDIO
 BUILD_NAME=test_mfg_test-BCM943362WCD4-FreeRTOS-LwIP-SDIO
-SUFFIX=_BM-14
+SUFFIX=_BM-02
 
 SERVER_PUB_KEY=cloud_public.der
 FIRMWARE_BUILD=$(FIRMWARE)/build

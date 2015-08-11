@@ -6,7 +6,7 @@ The firmware includes a debugging aid that enables debug output, from the system
 To create a debug build, add `DEBUG_BUILD=y` to the `make` command line. If the previous build was not a debug build then
 you should add `clean` to perform a clean build.
 
-On the photon, the system modules must also be rebuilt also with `DEBUG_BUILD` set.
+On the photon, the system modules must also be rebuilt with `DEBUG_BUILD` set.
 
 
 ### Logging Messages

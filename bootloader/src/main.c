@@ -367,7 +367,7 @@ int main(void)
             // Set IWDG Timeout to 5 secs based on platform specific system flags
             IWDG_Reset_Enable(5 * TIMING_IWDG_RELOAD);
 
-            SysTick_Disable();
+            // SysTick_Disable();
             Jump_To_Application();
         }
         else

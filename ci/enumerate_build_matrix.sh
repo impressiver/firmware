@@ -13,7 +13,7 @@ cd main
 # define build matrix dimensions
 # "" means execute execute the make command without that var specified
 DEBUG_BUILD=( y n )
-PLATFORM=( core photon P1 )
+PLATFORM=( core photon P1 dash )
 COMPILE_LTO=( y n )
 SPARK_CLOUD=( y n )
 # TODO: Once FIRM-161 is fixed, change APP to this: APP=( "" tinker blank product_id_and_version )

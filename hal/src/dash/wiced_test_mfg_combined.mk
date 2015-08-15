@@ -11,7 +11,6 @@ ifeq (,$(PLATFORM_ID))
 $(error PLATFORM_ID not defined!)
 endif
 
-
 # redefine these for your environment
 TOOLCHAIN_PREFIX=arm-none-eabi-
 CORE?=../../../..
@@ -187,8 +186,8 @@ DFU_FLASH = dfu-util -d $(DFU_USB_ID) -a 0 --dfuse-address
 # Run this after doing a factory reset on the combined image and putting the
 # device in DFU mode.
 # This will create a blank DCT (with pre-generated keys)
-# The this script erases the generated keys, with 0xFF
-# And writes the server public key to the appropriate place
+# This script erases the generated keys, with 0xFF and writes the server public
+# key to the appropriate place
 prep_dct:
 	dd if=/dev/zero ibs=4258 count=1 | tr "\000" "\377" > $(ERASE_SECTOR)
 #	tr "\000" "\377" < /dev/zero | dd of=$(ERASE_SECTOR) ibs=4258 count=1

@@ -46,7 +46,7 @@ with newer versions.
 
     * Moved stack-internal parts of tcp.h to tcp_impl.h, tcp.h now only contains
       the actual application programmer's API
-
+  
     * Separated timer implementation from sys.h/.c, moved to timers.h/.c;
       Added timer implementation for NO_SYS==1, set NO_SYS_NO_TIMERS==1 if you
       still want to use your own timer implementation for NO_SYS==0 (as before).
@@ -111,7 +111,7 @@ with newer versions.
   * Added const char* name to mem- and memp-stats for easier debugging.
 
   * Calculate the TCP/UDP checksum while copying to only fetch data once:
-    Define LWIP_CHKSUM_COPY to a memcpy-like function that returns the checksum
+    Define LWIP_CHKSUM_COPY to a memcpy-like function that returns the checksum    
 
   * Added SO_REUSE_RXTOALL to pass received UDP broadcast/multicast packets to
     more than one pcb.

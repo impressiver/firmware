@@ -19,4 +19,6 @@ call update.bat . %WICED%
 
 @REM update platform libraries (any RTOS)
 call update.bat lib %WICED%\build\demo_soft_ap-BCM943362WCD4-ThreadX-NetX-SDIO\libraries
-call update.bat lib\ThreadX %WICED%\build\demo_soft_ap-BCM943362WCD4-ThreadX-NetX-SDIO\libraries
+call update.bat lib\FreeRTOS %WICED%\build\demo_soft_ap-BCM943362WCD4-FreeRTOS-LwIP-SDIO\libraries
+
+

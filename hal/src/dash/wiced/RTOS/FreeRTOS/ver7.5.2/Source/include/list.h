@@ -375,3 +375,4 @@ unsigned portBASE_TYPE uxListRemove( xListItem * const pxItemToRemove );
 #endif
 
 #endif
+

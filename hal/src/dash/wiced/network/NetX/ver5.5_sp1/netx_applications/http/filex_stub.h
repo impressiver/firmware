@@ -102,3 +102,4 @@ UINT        fx_media_open(FX_MEDIA *media_ptr, CHAR *media_name,
 
 
 #endif   /* FILEX_STUB_H */
+

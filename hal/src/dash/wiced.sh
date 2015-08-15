@@ -7,7 +7,7 @@ WICED=../../../../dash-wiced
 
 OPTS=
 
-SNIP=snip.apsta
+SNIP=demo.soft_ap
 NET=BCM943362WCD4
 RTOS=FreeRTOS
 IP=LwIP
@@ -39,14 +39,13 @@ fi
 popd
 
 # update headers
-update ./include $WICED/include
-update ./libraries $WICED/libraries
-update ./platforms $WICED/platforms
-update ./wiced $WICED/wiced
+update . $WICED
+# sync files
+# update ./include $WICED/include
+# update ./libraries $WICED/libraries
+# update ./platforms $WICED/platforms
+# update ./wiced $WICED/wiced
 
 # update platform libraries (any RTOS)
 update lib $WICED/build/${SNIP//./_}-${NET}-${RTOS}-${IP}-SDIO/libraries
 update lib/${RTOS} $WICED/build/${SNIP//./_}-${NET}-${RTOS}-${IP}-SDIO/libraries
-
-# update lib $WICED/build/snip_apsta-${NET}-${RTOS}-${IP}-SDIO/libraries
-# update lib/${RTOS} $WICED/build/snip_apsta-${NET}-${RTOS}-${IP}-SDIO/libraries

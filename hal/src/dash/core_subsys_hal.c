@@ -29,3 +29,5 @@
 int HAL_core_subsystem_version(char* patchstr, int bufLen) {
     return wwd_wifi_get_wifi_version(patchstr, bufLen);
 }
+
+

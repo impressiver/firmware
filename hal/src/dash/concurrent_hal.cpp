@@ -117,3 +117,8 @@ os_result_t os_thread_cleanup(os_thread_t* thread)
 {
     return wiced_rtos_delete_thread((wiced_thread_t*)thread);
 }
+
+
+
+
+

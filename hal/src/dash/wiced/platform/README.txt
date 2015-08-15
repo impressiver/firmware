@@ -3,7 +3,7 @@ README for Platform Directory
 ------------------------------------------------------------------------------------------------
 
 This directory holds platform specific code that does not form part of the WICED Wi-Fi driver.
-The directory contains the following material
+The directory contains the following material 
 
 - CPU Architecture source e.g. ARM_CM3, ARM_CM4
   - CRT0 startup code

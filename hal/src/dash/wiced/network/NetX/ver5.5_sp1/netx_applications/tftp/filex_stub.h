@@ -82,3 +82,4 @@ UINT        fx_file_truncate(FX_FILE *file_ptr, ULONG size);
 UINT        fx_file_truncate_release(FX_FILE *file_ptr, ULONG size);
 
 #endif
+

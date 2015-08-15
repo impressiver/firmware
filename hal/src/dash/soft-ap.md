@@ -37,8 +37,8 @@
   - number of bytes in body in ascii, e.g. '5' '7' for 57 bytes. LF
   - LF (empty line delimiter), followed by the JSON representation of the request data (if the command request requires one)
  - response:
-	- line delimited header data (if any) followed by an empty line (\n\n)
-	- command result as JSON
+ 	- line delimited header data (if any) followed by an empty line (\n\n)
+ 	- command result as JSON
  - one request/response pair per socket connection
 
 - HTTP/80 :
@@ -252,3 +252,7 @@ Here's how to setup and run the test:
 - serial dispatcher for manual testing, perhaps also automated testing from python script
 - for soft-AP testing implement HTTP dispatcher and test via http client in python script.
 - On windows `netsh wlan connect <AP name>` can be used to connect to a specific AP
+
+
+
+

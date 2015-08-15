@@ -204,3 +204,6 @@ PROVIDE( __tx_vectors = link_interrupt_vectors_location );
 
 PROVIDE( wifi_firmware_image = 0 );
 PROVIDE( bootloader_api_addr_loc     = 0x08000200);
+
+
+

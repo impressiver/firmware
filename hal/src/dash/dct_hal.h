@@ -35,3 +35,4 @@ STATIC_ASSERT(size_complete_dct, (sizeof(complete_dct_t)<16384));
 #endif
 
 #endif	/* DCT_HAL_H */
+

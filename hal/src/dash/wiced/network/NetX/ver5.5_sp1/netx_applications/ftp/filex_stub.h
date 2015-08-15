@@ -85,3 +85,4 @@ UINT        fx_directory_local_path_set(FX_MEDIA *media_ptr, FX_LOCAL_PATH *loca
 UINT        fx_directory_local_path_get(FX_MEDIA *media_ptr, CHAR **return_path_name);
 
 #endif
+

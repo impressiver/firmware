@@ -46,3 +46,4 @@ extern void besl_host_scan(scan_result_handler_t result_handler, void* user_data
 #ifdef __cplusplus
 } /*extern "C" */
 #endif
+

@@ -74,3 +74,4 @@ void platform_stdio_read ( char* str, uint32_t len );
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
+

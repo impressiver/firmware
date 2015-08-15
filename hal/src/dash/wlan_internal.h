@@ -39,3 +39,4 @@ wiced_result_t wlan_initialize_dct();
 
 
 #endif	/* WLAN_INTERNAL_H */
+

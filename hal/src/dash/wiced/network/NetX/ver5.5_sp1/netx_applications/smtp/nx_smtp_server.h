@@ -918,3 +918,4 @@ VOID    _nx_smtp_server_base64_decode(const CHAR *base64name, CHAR *name);
 #endif
 
 #endif /* NX_SMTP_SERVER_H */
+

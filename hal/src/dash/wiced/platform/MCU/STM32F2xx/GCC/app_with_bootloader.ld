@@ -202,3 +202,8 @@ PROVIDE( sram_size_loc           = LENGTH( SRAM ));
 PROVIDE( __RAM_segment_used_end__ = link_stack_end );
 PROVIDE( __tx_free_memory_start = link_stack_end );
 PROVIDE( __tx_vectors = link_interrupt_vectors_location );
+
+
+
+
+

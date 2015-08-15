@@ -354,3 +354,4 @@ UINT        _nx_uchar_to_ascii_convert(UCHAR number, CHAR *buffstring);
 #endif
 
 #endif
+

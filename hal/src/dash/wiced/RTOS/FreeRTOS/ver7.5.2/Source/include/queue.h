@@ -1122,7 +1122,7 @@ void vQueueDelete( /*@only@*/ xQueueHandle xQueue ) PRIVILEGED_FUNCTION;
 
  void vFunction( void *pvParameters )
  {
-	// Create a queue to hold one unsigned long value.  It is strongly
+ 	// Create a queue to hold one unsigned long value.  It is strongly
 	// recommended *not* to use xQueueOverwriteFromISR() on queues that can
 	// contain more than one value, and doing so will trigger an assertion
 	// if configASSERT() is defined.
@@ -1664,3 +1664,4 @@ unsigned char ucQueueGetQueueType( xQueueHandle xQueue ) PRIVILEGED_FUNCTION;
 #endif
 
 #endif /* QUEUE_H */
+

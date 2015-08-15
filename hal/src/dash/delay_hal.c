@@ -38,3 +38,4 @@ void HAL_Delay_Milliseconds(uint32_t nTime)
 {
     wiced_rtos_delay_milliseconds(nTime);
 }
+

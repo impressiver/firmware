@@ -368,3 +368,4 @@ uint16_t HAL_Get_Claim_Code(char* buffer, unsigned len)
     }
     return result;
 }
+

@@ -84,3 +84,4 @@ UINT        _nx_des_decrypt(NX_DES *context, UCHAR source[8], UCHAR destination[
 VOID        _nx_des_process_block(UCHAR source[8], UCHAR destination[8], ULONG keys[32]);
 
 #endif
+

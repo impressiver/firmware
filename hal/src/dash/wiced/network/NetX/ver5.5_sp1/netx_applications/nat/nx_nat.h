@@ -877,3 +877,4 @@ UINT    _nx_uchar_to_ascii_convert(UCHAR number, CHAR *buffstring);
 #endif
 
 #endif /* NX_NAT_H  */
+

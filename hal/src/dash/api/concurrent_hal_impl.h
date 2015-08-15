@@ -32,3 +32,4 @@ const os_thread_prio_t OS_THREAD_PRIORITY_DEFAULT = 0;
 const size_t OS_THREAD_STACK_SIZE_DEFAULT = 512;
 
 #endif	/* CONCURRENCY_HAL_IMPL_H */
+

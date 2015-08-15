@@ -234,3 +234,4 @@ VOID        _nx_auto_ip_arp_packet_send(NX_AUTO_IP *auto_ip_ptr, ULONG source_ip
 #endif
 
 #endif
+

@@ -166,3 +166,4 @@ extern void HASH_RNG_irq           ( void );  // Hash and Rng
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
+

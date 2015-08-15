@@ -246,3 +246,4 @@ platform_result_t platform_filesystem_init            ( void );
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
+

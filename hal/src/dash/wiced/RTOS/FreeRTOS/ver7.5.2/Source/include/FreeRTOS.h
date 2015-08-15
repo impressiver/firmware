@@ -613,3 +613,4 @@ typedef portBASE_TYPE (*pdTASK_HOOK_CODE)( void * );
 #define eTaskStateGet eTaskGetState
 
 #endif /* INC_FREERTOS_H */
+

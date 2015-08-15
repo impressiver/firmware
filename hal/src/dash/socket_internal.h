@@ -27,3 +27,4 @@
 void socket_close_all();
 
 #endif	/* SOCKET_INTERNAL_H */
+

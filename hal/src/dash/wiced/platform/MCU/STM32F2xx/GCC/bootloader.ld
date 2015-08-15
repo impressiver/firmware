@@ -196,3 +196,4 @@ PROVIDE( shared_api_addr_loc  = ORIGIN( SHARED_API ));
 
 PROVIDE( link_bss_location = 0 );
 PROVIDE( link_bss_end = 0 );
+

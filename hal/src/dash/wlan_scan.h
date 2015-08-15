@@ -15,3 +15,4 @@ void wlan_scan_aps(scan_ap_callback callback, void* callback_data);
 
 
 #endif	/* WLAN_SCAN_H */
+

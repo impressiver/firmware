@@ -647,3 +647,4 @@ INT  FD_ISSET(INT fd, fd_set *fdset);
 VOID FD_ZERO(fd_set *fdset);
 
 #endif  /* NX_BSD_H */
+

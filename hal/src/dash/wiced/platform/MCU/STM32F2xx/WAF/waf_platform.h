@@ -100,3 +100,4 @@ wiced_bool_t platform_check_factory_reset( void );
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
+

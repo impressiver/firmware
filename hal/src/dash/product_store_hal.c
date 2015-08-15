@@ -35,3 +35,4 @@ uint16_t HAL_GetProductStore(ProductStoreIndex index)
     uint16_t* value = dct_product_store_offset(index);
     return *value;
 }
+

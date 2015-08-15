@@ -2,6 +2,13 @@
 BCM94332WCD4 - README
 --------------------------------------------
 
+To build this platform:
+-  download and install the Broadcom WICED SDK from Broadcom's website
+-  modify `wiced.sh` and `make_combined.sh` and configure the correct paths
+-  run `wiced.sh`
+
+-----
+
 Provider    : Broadcom
 Website     : http://broadcom.com/wiced
 Description : Broadcom BCM943362WCD4 mounted on a Broadcom BCM9WCD1EVAL1 evaluation board

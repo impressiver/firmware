@@ -1,4 +1,7 @@
-WICED=/spark/dash-wiced
+WICED=../../../../dash-wiced
+
+# $ cd firmware/hal/src/dash
+# $ ./wiced.sh
 
 OPTS=
 
@@ -13,7 +16,8 @@ if [ "$1" == "clean" ]; then
   ./make clean
 fi
 
-./make demo.soft_ap-BCM943362WCD4-FreeRTOS-LwIP-SDIO $OPTS
+./make snip.scan-BCM943362WCD4-FreeRTOS-LwIP-SDIO $OPTS
+./make snip.apsta-BCM943362WCD4-FreeRTOS-LwIP-SDIO $OPTS
 
 popd
 
@@ -22,5 +26,8 @@ update . $WICED
 
 
 # update platform libraries (any RTOS)
-update lib $WICED/build/demo_soft_ap-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries
-update lib/FreeRTOS $WICED/build/demo_soft_ap-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries
+update lib $WICED/build/snip_scan-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries
+update lib/FreeRTOS $WICED/build/snip_scan-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries
+
+update lib $WICED/build/snip_apsta-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries
+update lib/FreeRTOS $WICED/build/snip_apsta-BCM943362WCD4-FreeRTOS-LwIP-SDIO/libraries

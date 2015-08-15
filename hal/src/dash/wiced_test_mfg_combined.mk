@@ -15,10 +15,10 @@ endif
 # redefine these for your environment
 TOOLCHAIN_PREFIX=arm-none-eabi-
 CORE?=../../../..
-WICED_SDK?=$(CORE)/WICED/WICED-SDK-3.1.1/WICED-SDK
+#WICED_SDK?=$(CORE)/WICED/WICED-SDK-3.1.1/WICED-SDK
 FIRMWARE=$(CORE)/firmware
 COMMON_BUILD=$(FIRMWARE)/build
-#WICED_SDK?=$(CORE)/dash-wiced
+WICED_SDK?=$(CORE)/dash-wiced
 #FIRMWARE=$(CORE)/firmware-private
 
 include $(COMMON_BUILD)/macros.mk
@@ -60,7 +60,7 @@ USER_DIR=$(FIRMWARE)/modules/dash/user-part
 
 MFG_TEST_BIN=$(WICED_SDK)/build/$(BUILD_NAME)/binary/$(BUILD_NAME).bin
 MFG_TEST_MEM=$(OUT)/mfg_test_pad$(SUFFIX).bin
-MFG_TEST_DIR=Apps/test/mfg_test
+MFG_TEST_DIR=apps/test/mfg_test
 
 PRODUCT_ID?=$(PLATFORM_ID)
 
@@ -78,7 +78,6 @@ all: combined
 setup:
 	-mkdir $(TARGET_PARENT)
 	-mkdir $(TARGET)
-
 
 clean:
 	-rm -rf $(TARGET_PARENT)

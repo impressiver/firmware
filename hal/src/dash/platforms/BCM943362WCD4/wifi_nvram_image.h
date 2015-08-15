@@ -1,5 +1,5 @@
 /*
- * Copyright 2014, Broadcom Corporation
+ * Copyright 2015, Broadcom Corporation
  * All Rights Reserved.
  *
  * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
@@ -24,6 +24,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 
 /**
  * Character array of NVRAM image
@@ -90,13 +91,12 @@ static const char wifi_nvram_image[] =
         "edoffthd=-76"                                                       "\x00"
         "\x00\x00";
 
-
-#ifdef __cplusplus
-} /* extern "C" */
-#endif
-
 #else /* ifndef INCLUDED_NVRAM_IMAGE_H_ */
 
 #error Wi-Fi NVRAM image included twice
 
 #endif /* ifndef INCLUDED_NVRAM_IMAGE_H_ */
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif

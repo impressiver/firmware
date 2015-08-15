@@ -1,5 +1,5 @@
 /*
- * Copyright 2014, Broadcom Corporation
+ * Copyright 2015, Broadcom Corporation
  * All Rights Reserved.
  *
  * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
@@ -210,6 +210,9 @@ typedef enum
 /* Components connected to external I/Os */
 #define WICED_LED1         ( WICED_GPIO_11 )
 #define WICED_LED2         ( WICED_GPIO_12 )
+#define WICED_LED1_ON_STATE  ( WICED_ACTIVE_HIGH )
+#define WICED_LED2_ON_STATE  ( WICED_ACTIVE_HIGH )
+
 #define WICED_BUTTON1      ( WICED_GPIO_3 )
 #define WICED_BUTTON2      ( WICED_GPIO_2 )
 #define WICED_THERMISTOR   ( WICED_GPIO_4 )
@@ -221,7 +224,7 @@ typedef enum
 
 /*  Bootloader LED D1 */
 #define BOOTLOADER_LED_GPIO      ( WICED_LED1 )
-#define BOOTLOADER_LED_ON_STATE  ( WICED_ACTIVE_HIGH )
+#define BOOTLOADER_LED_ON_STATE  ( WICED_LED1_ON_STATE )
 
  /* Bootloader Button S1 */
 #define BOOTLOADER_BUTTON_GPIO           ( WICED_BUTTON1 )

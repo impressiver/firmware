@@ -34,7 +34,6 @@
 #define PLATFORM_P1                         8
 #define PLATFORM_ETHERNET_PROTO             9
 #define PLATFORM_ELECTRON                   10
-
 #define PLATFORM_DASH                       99
 
 

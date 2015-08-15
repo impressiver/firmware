@@ -155,12 +155,12 @@ wlan_result_t wlan_connect_finalize()
 
 wlan_result_t wlan_activate()
 {
-    return wiced_network_resume();
+    return wiced_wlan_connectivity_init();
 }
 
 wlan_result_t wlan_deactivate() {
     wlan_disconnect_now();
-    return 0; //wiced_network_suspend();
+    return 0;
 }
 
 wlan_result_t wlan_disconnect_now()

@@ -776,7 +776,7 @@ bool fetch_or_generate_ssid_prefix(wiced_ssid_t* SSID) {
     uint8_t len = *prefix;
     bool generate = (!len || len>MAX_SSID_PREFIX_LEN);
     if (generate) {
-        strcpy((char*)SSID->value, "dash");
+        strcpy((char*)SSID->value, "Dash");
         SSID->length = 6;
         dct_write_app_data(SSID, DCT_SSID_PREFIX_OFFSET, SSID->length+1);
     }

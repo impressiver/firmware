@@ -7,7 +7,7 @@ WICED=../../../../dash-wiced
 
 OPTS=
 
-SNIP=demo.soft_ap
+SNIP=snip.config_mode
 NET=BCM943362WCD4
 RTOS=FreeRTOS
 IP=LwIP

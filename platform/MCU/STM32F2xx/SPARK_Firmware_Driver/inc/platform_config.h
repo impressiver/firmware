@@ -109,8 +109,8 @@
 #define BUTTON1_EXTI_IRQ_PRIORITY           7
 #define BUTTON1_EXTI_IRQ_INDEX              39
 #define BUTTON1_EXTI_TRIGGER                EXTI_Trigger_Falling
-#elif   PLATFORM_ID == PLATFORM_DASH
 // TODO: (IW) Fix me
+#elif   PLATFORM_ID == PLATFORM_DASH
 #define BUTTON1_GPIO_PIN                    GPIO_Pin_7
 #define BUTTON1_GPIO_PORT                   GPIOC
 #define BUTTON1_GPIO_CLK                    RCC_AHB1Periph_GPIOC
@@ -146,7 +146,6 @@
 
 #if PLATFORM_DASH == PLATFORM_ID
 #define USE_USB_OTG_HS
-#define FLASH_UPDATE_MODULES
 #endif
 
 #if   PLATFORM_TEACUP_PIGTAIL_DEV == PLATFORM_ID || \
